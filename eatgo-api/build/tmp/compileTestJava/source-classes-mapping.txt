@@ -1,0 +1,6 @@
+kr/co/project/eat/EatApplicationTests.java
+ kr.co.project.eat.EatApplicationTests
+kr/co/project/eat/interfaces/RestaurantControllerTest.java
+ kr.co.project.eat.interfaces.RestaurantControllerTest
+kr/co/project/eat/domain/RestaurantTests.java
+ kr.co.project.eat.domain.RestaurantTests
