@@ -12,17 +12,17 @@ public class Restaurant {
 
 
 
+    public Long getId() {
+
+        return id;
+    }
+
     public String getName() {
-        return "Bob zip";
+        return name;
     }
 
     public String getAddress () {
         return address;
-    }
-
-    public Long getId() {
-
-        return id;
     }
 
     public String getInformation() {

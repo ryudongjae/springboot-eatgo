@@ -1,10 +1,7 @@
 package kr.co.project.eat.interfaces;
 
 import kr.co.project.eat.domain.Restaurant;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,5 +19,19 @@ public class RestaurantController {
 
         return restaurants;
 
+    }
+    @GetMapping("/restaurants/{id}")
+    public Restaurant detail(@PathVariable("id") Long id){
+        List<Restaurant> restaurants = new ArrayList<>();
+
+        restaurants.add(new Restaurant(1004L,"Bob zip" , "Seoul"));
+        restaurants.add(new Restaurant(2020L,"Cyber Food","Seoul"));
+
+        Restaurant restaurant = restaurants.stream()
+                .filter(r -> r.getId().equals(id))
+                .findFirst()
+                .get();
+
+        return restaurant;
     }
 }
