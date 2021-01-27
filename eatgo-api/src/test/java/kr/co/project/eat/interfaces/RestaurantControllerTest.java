@@ -1,9 +1,11 @@
 package kr.co.project.eat.interfaces;
 
+import kr.co.project.eat.domain.RestaurantRepositoryImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -18,6 +20,10 @@ public class RestaurantControllerTest {
 
     @Autowired
     private MockMvc mvc;
+
+    @SpyBean(RestaurantRepositoryImpl.class)
+    private RestaurantRepositoryImpl restaurantRepository;
+
     @Test
     public void list() throws Exception {
         mvc.perform(get("/restaurants"))
