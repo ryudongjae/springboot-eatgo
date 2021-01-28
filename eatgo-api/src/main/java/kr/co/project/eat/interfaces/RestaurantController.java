@@ -1,5 +1,6 @@
 package kr.co.project.eat.interfaces;
 
+import kr.co.project.eat.application.RestaurantService;
 import kr.co.project.eat.domain.MenuItem;
 import kr.co.project.eat.domain.MenuItemRepository;
 import kr.co.project.eat.domain.Restaurant;
@@ -15,10 +16,11 @@ import java.util.List;
 public class RestaurantController {
 
     @Autowired
-    private RestaurantRepository restaurantRepository;
-
+    private RestaurantService restaurantService;
     @Autowired
     private MenuItemRepository menuItemRepository;
+    @Autowired
+    private RestaurantRepository restaurantRepository;
 
 
     @GetMapping("/restaurants")
@@ -31,6 +33,7 @@ public class RestaurantController {
     @GetMapping("/restaurants/{id}")
     public Restaurant detail(@PathVariable("id") Long id){
         Restaurant restaurant = restaurantRepository.findById(id);
+
         List<MenuItem> menuItems = menuItemRepository.findAllByRestaurantId(id);
         restaurant.setMenuItem(menuItems);
 
