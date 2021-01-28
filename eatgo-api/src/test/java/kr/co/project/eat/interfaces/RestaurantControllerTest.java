@@ -1,5 +1,6 @@
 package kr.co.project.eat.interfaces;
 
+import kr.co.project.eat.domain.MenuItemRepositoryImpl;
 import kr.co.project.eat.domain.RestaurantRepositoryImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +24,9 @@ public class RestaurantControllerTest {
 
     @SpyBean(RestaurantRepositoryImpl.class)
     private RestaurantRepositoryImpl restaurantRepository;
+
+    @SpyBean(MenuItemRepositoryImpl.class)
+    private MenuItemRepositoryImpl menuItemRepository;
 
     @Test
     public void list() throws Exception {
