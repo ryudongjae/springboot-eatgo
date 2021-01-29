@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Component//RestaurantRepositoryImpl을 스프링이 직접 관리.
 public class RestaurantRepositoryImpl implements RestaurantRepository {
 
    private List<Restaurant> restaurants = new ArrayList<>();
