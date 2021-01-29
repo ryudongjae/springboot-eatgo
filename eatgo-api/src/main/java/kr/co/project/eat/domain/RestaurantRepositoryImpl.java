@@ -17,6 +17,7 @@ public class RestaurantRepositoryImpl implements RestaurantRepository {
 
     @Override
     public List<Restaurant> findAll() {
+
         return restaurants;
     }
 
