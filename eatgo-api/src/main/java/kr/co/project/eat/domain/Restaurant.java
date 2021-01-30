@@ -2,14 +2,22 @@ package kr.co.project.eat.domain;
 
 import com.fasterxml.jackson.databind.deser.std.CollectionDeserializer;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.lang.invoke.MutableCallSite;
 import java.util.ArrayList;
 import java.util.List;
-
+@Entity
 public class Restaurant {
+    @Id
+    @GeneratedValue
     private  Long id;
     private  String name;
     private  String address;
+
+    @Transient
     private List<MenuItem> menuItems = new ArrayList<MenuItem>();
 
 

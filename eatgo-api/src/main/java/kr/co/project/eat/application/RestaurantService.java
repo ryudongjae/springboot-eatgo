@@ -28,7 +28,7 @@ public class RestaurantService {
     }
 
     public Restaurant getRestaurant(Long id){
-        Restaurant restaurant = restaurantRepository.findById(id);
+        Restaurant restaurant = restaurantRepository.findById(id).orElse(null);
 
         //기본정보 + 메뉴 정보 .
 
