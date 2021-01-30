@@ -2,10 +2,7 @@ package kr.co.project.eat.interfaces;
 
 
 import kr.co.project.eat.application.RestaurantService;
-import kr.co.project.eat.domain.MenuItem;
-import kr.co.project.eat.domain.MenuItemRepository;
 import kr.co.project.eat.domain.Restaurant;
-import kr.co.project.eat.domain.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

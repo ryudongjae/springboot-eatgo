@@ -1,3 +1,11 @@
+kr/co/project/eat/domain/MenuItemRepository.java
+ kr.co.project.eat.domain.MenuItemRepository
+kr/co/project/eat/EatApplication.java
+ kr.co.project.eat.EatApplication
+kr/co/project/eat/interfaces/WelcomeController.java
+ kr.co.project.eat.interfaces.WelcomeController
+kr/co/project/eat/domain/MenuItem.java
+ kr.co.project.eat.domain.MenuItem
 kr/co/project/eat/interfaces/RestaurantController.java
  kr.co.project.eat.interfaces.RestaurantController
 kr/co/project/eat/domain/RestaurantRepository.java
@@ -6,11 +14,3 @@ kr/co/project/eat/application/RestaurantService.java
  kr.co.project.eat.application.RestaurantService
 kr/co/project/eat/domain/Restaurant.java
  kr.co.project.eat.domain.Restaurant
-kr/co/project/eat/domain/MenuItem.java
- kr.co.project.eat.domain.MenuItem
-kr/co/project/eat/domain/MenuItemRepository.java
- kr.co.project.eat.domain.MenuItemRepository
-kr/co/project/eat/EatApplication.java
- kr.co.project.eat.EatApplication
-kr/co/project/eat/interfaces/WelcomeController.java
- kr.co.project.eat.interfaces.WelcomeController

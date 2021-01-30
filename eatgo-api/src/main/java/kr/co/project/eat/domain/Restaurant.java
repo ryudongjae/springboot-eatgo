@@ -37,22 +37,27 @@ public class Restaurant {
     }
 
     public String getName() {
+
         return name;
     }
 
     public String getAddress () {
+
         return address;
     }
 
     public String getInformation() {
+
         return name +" in " + address;
     }
     public List<MenuItem> getMenuItems(){
+
         return menuItems;
     }
 
 
     public void addMenuItem(MenuItem menuItem) {
+
         menuItems.add(menuItem);
     }
 
@@ -64,6 +69,7 @@ public class Restaurant {
 
 
     public void setId(long id) {
+
         this.id = id;
     }
 }
