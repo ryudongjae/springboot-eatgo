@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
-    private final  Long id;
-    private final String name;
-    private final String address;
+    private  Long id;
+    private  String name;
+    private  String address;
     private List<MenuItem> menuItems = new ArrayList<MenuItem>();
 
 
