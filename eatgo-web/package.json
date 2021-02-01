@@ -4,12 +4,14 @@
   "description": "EatGo Web Project",
   "main": "src/index.js",
   "scripts": {
+    "start": "webpack-dev-server --port 3000",
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "springboot-eatgo"
-  },
   "author": "ryudongjae",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
