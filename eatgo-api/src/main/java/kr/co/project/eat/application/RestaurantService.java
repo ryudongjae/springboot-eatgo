@@ -7,6 +7,7 @@ import kr.co.project.eat.domain.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
@@ -41,4 +42,14 @@ public class RestaurantService {
     public Restaurant addRestaurant(Restaurant restaurant) {
         return restaurantRepository.save(restaurant);
     }
+//    @Transactional
+//    public Restaurant updateRestaurant(Long id, Long categoryId,
+//                                       String name, String address) {
+//        Restaurant restaurant = restaurantRepository.findById(id).orElse(null);
+//
+//        restaurant.updateInformation(categoryId, name, address);
+//
+//        return restaurant;
+//    }
+
 }

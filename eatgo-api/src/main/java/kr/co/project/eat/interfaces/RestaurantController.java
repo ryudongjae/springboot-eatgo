@@ -30,12 +30,6 @@ public class RestaurantController {
     public Restaurant detail(@PathVariable("id") Long id){
        Restaurant restaurant = restaurantService.getRestaurant(id);
         //기본정보 + 메뉴 정보 .
-
-//        Restaurant restaurant = restaurantRepository.findById(id);
-//
-//        List<MenuItem> menuItems = menuItemRepository.findAllByRestaurantId(id);
-//        restaurant.setMenuItems(menuItems);
-
         return restaurant;
     }
 
