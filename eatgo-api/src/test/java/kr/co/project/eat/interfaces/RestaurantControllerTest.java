@@ -100,47 +100,11 @@ public class RestaurantControllerTest {
     }
 
 
-    @Test
-    public void create4() throws Exception {
-
-        mvc.perform(post("/restaurants")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"name\":\"BeRyong\",\"address\":\"Busan\"}"))
-                .andExpect(status().isCreated())
-                .andExpect(header().string("location", "/restaurants/1234"))
-                .andExpect(content().string("{}"));
-
-        verify(restaurantService).addRestaurant(any());
-    }
-
-
-    @Test
-    public void create3() throws Exception {
-
-        mvc.perform(post("/restaurants")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"name\":\"BeRyong\",\"address\":\"Busan\"}"))
-                .andExpect(status().isCreated())
-                .andExpect(header().string("location", "/restaurants/1234"))
-                .andExpect(content().string("{}"));
-
-        verify(restaurantService).addRestaurant(any());
-    }
 
 
 
-    @Test
-    public void create2() throws Exception {
 
-        mvc.perform(post("/restaurants")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"name\":\"BeRyong\",\"address\":\"Busan\"}"))
-                .andExpect(status().isCreated())
-                .andExpect(header().string("location", "/restaurants/1234"))
-                .andExpect(content().string("{}"));
 
-        verify(restaurantService).addRestaurant(any());
-    }
 
 
     @Test
