@@ -3,6 +3,8 @@ package kr.co.project.eat.interfaces;
 
 import kr.co.project.eat.application.RestaurantService;
 import kr.co.project.eat.domain.Restaurant;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,11 +12,12 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
+
 @CrossOrigin
 @RestController
 public class RestaurantController {
 
-    public static final String address = "Seoul";
+
     @Autowired
     private RestaurantService restaurantService;
 
@@ -34,7 +37,7 @@ public class RestaurantController {
     }
 
     @PostMapping("/restaurants")
-    public ResponseEntity<?> create(@RequestBody Restaurant resource) throws URISyntaxException {
+    public ResponseEntity<?> create( @RequestBody Restaurant resource) throws URISyntaxException {
         String name = resource.getName();
         String address = resource.getAddress();
 
