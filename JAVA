@@ -1,0 +1,4 @@
+다음 예와 같은 a, b를 변수(variable)라고 한다.
+int a;
+String b;
+
