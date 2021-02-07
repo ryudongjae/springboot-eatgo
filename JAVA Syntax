@@ -49,8 +49,10 @@ new라는 키워드는 객체를 만들 때 사용한다.
 하지만 보통 문자열을 표현할 때는 가급적 첫번째 방식(literal 표기)을 사용하는 것이 좋다. 첫 번째 처럼 사용하면 가독성에 이점이 있고 컴파일 시 최적화에 도움을 주기 때문이다.
 
 primitive(원시) 자료형
-
 이전에 살펴보았던 int, long, double, float, boolean, char 등을 자바는 primitive 자료형 이라고 부른다. 이런 primitive 자료형은 new 키워드로 생성할 수 없다.
-equals
 
+equals
 equals는 두개의 문자열이 동일한 값을 가지고 있는지를 비교하여 결과값을 리턴한다.
+
+indexOf
+indexOf는 문자열에서 특정 문자가 시작되는 인덱스를 리턴한다.
