@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="kr.co.project.eat.domain.RestaurantTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-10T06:25:51" hostname="lyudongjaeui-MacBookPro.local" time="0.019">
+<testsuite name="kr.co.project.eat.domain.RestaurantTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-12T15:00:19" hostname="lyudongjaeui-MacBookPro.local" time="0.029">
   <properties/>
-  <testcase name="creation()" classname="kr.co.project.eat.domain.RestaurantTests" time="0.019"/>
+  <testcase name="creation()" classname="kr.co.project.eat.domain.RestaurantTests" time="0.029"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
